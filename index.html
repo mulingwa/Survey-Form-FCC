@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Code Camp Survey </h1>
+            <p>Thanks for taking your time to fill out this survey</p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label id="name-label" for="name">Name</label><br>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div id="form-group">
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <br>
+            <div id="form-group">
+                <label id="age-label" for="age">Age <span id="clue">(Optional)</span></label>
+                <br>
+                <input type="number" name="age" id="age" class="form-control" min="10" max="99" placeholder="Enter your age" required>
+            </div>
+            <div id="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="option-dropdown" id="option" class="form-control" required>
+            <option selected disabled value>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+            </div>
+            <div id="form-group">
+                <p>Would you recommend us to a friend?</p>
+                <label>
+               <input
+               name="recommendations"
+               value="Definitely"
+               type="radio"
+               class="option-group"
+               checked
+               />Definitely</label>
+                <br>
+                <label>
+                <input
+                name="recommendations"
+                value="maybe"
+                type="radio"
+                class="option-group"
+                />Maybe</label>
+                <br>
+                <label>
+                    <input
+                    name="recommendations"
+                    value="Not-likely"
+                    type="radio"
+                    class="option-group"
+                    />Not Likely</label>
+            </div>
+            <div id="form-group">
+                <p>What was your favorite feature of the camp?</p>
+                <select name="most-like" id="most-like" class="form-control" required>
+               <option selected disabled value="Select an option">Select an option</option>
+               <option value="challenges">Challenges</option>
+               <option value="projects">Projects</option>
+               <option value="Community">Community</option>
+               <option value="open-source">Open Source</option>
+           </select>
+            </div>
+            <div id="form-group">
+                <p>What would you like to see improved? <span id="clue">Check all that apply</span></p>
+                <label>
+            <input type="checkbox" 
+            name="improve-on" 
+            value="front-end projects" 
+            class="input-checkbox">
+            Front-end Projects</label>
+                <br>
+                <label>
+             <input type="checkbox" 
+            name="improve-on" 
+            value="back-end projects" 
+            class="input-checkbox">
+            Back-end Projects</label>
+                <br>
+                <label>
+             <input type="checkbox" 
+            name="improve-on" 
+            value="challenges" 
+            class="input-checkbox">
+            Challenges</label>
+                <br>
+                <label>
+             <input type="checkbox" 
+            name="improve-on" 
+             value="Data-visualization" 
+             class="input-checkbox">
+            Data Visualization</label>
+                <br>
+                <label>
+             <input type="checkbox" 
+            name="improve-on" 
+            value="city-meetups" 
+            class="input-checkbox">
+            City Meetups</label>
+                <br>
+                <label>
+             <input type="checkbox" 
+            name="improve-on" 
+            value="forum" 
+            class="input-checkbox">
+            Forum</label>
+                <br>
+                <label>
+              <input type="checkbox" 
+             name="improve-on" 
+            value="additional-courses" 
+             class="input-checkbox">
+            Additional Courses</label>
+            </div>
+            <div id="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" rows="4" class="input-area" id="comments" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div id="form-group" id="btn">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                  </button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
